@@ -96,6 +96,7 @@ def test_upload_dataset():
         dropzone.send_keys(file2_path)
         wait_for_page_to_load(driver)
 
+
         # Add authors in UVL models
         time.sleep(2)
         show_button = driver.find_element(By.ID, "0_button")
