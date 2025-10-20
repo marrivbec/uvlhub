@@ -97,6 +97,7 @@ def test_upload_dataset():
         wait_for_page_to_load(driver)
 
         # Add authors in UVL models
+        time.sleep(2)
         show_button = driver.find_element(By.ID, "0_button")
         show_button.send_keys(Keys.RETURN)
         add_author_uvl_button = driver.find_element(By.ID, "0_form_authors_button")
